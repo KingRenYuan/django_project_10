@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
 from .forms import LoginForm, RegisterForm
 
-def log_in(request):
+def sign_in(request):
     if request.method == 'GET':
 
         if request.user.is_authenticated:
